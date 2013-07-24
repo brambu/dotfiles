@@ -9,8 +9,6 @@ filetype on
 filetype plugin on
 filetype indent on
 
-autocmd BufRead,BufNewFile *.src set filetype=xml
-
 set hidden
 set backspace=indent,eol,start
  
