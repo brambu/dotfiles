@@ -27,7 +27,8 @@ PROMPT_COMMAND="history -a"
 export HISTSIZE PROMPT_COMMAND
 set -o vi
 shopt -s histappend
-alias ls='ls $([ "$(uname)" == "Darwin" ] && echo "-G" || echo "--color")'
+COLOR_ARG=$([ "$(uname)" == "Darwin" ] && echo "-G" || echo "--color")
+alias ls='ls $COLOR_ARG'
 alias ll='ls -lF'
 alias grep='grep --color'
 alias pp='python -mjson.tool'
