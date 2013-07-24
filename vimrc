@@ -1,11 +1,7 @@
-
-"Pathogen specific stuff
- 
 "filetype off
 "call pathogen#runtime_append_all_bundles()
 "filetype plugin indent on
  
-" Basic options
 set nocompatible
  
 syntax on
@@ -42,7 +38,6 @@ set hlsearch
  
 set statusline=%F%m%r%h%w%=(%{&ff}/%Y)\ (line\ %l\/%L,\ col\ %c)
  
-"2 spaces rock
 set tabstop=2
 set shiftwidth=2
 set softtabstop=2
