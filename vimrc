@@ -2,6 +2,8 @@
 set nocompatible
 filetype off
 
+" install vundle
+" mkdir -p ~/.vim/bundle && git clone https://github.com/gmarik/vundle.git ~/.vim/bundle/vundle 
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
