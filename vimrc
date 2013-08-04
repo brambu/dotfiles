@@ -13,6 +13,7 @@ Bundle 'scrooloose/nerdtree'
 Bundle 'klen/python-mode'
 Bundle 'altercation/vim-colors-solarized'
 Bundle 'davidhalter/jedi-vim'
+Bundle 'scrooloose/syntastic'
 " end vundle section 
 
 "Bundle 'davidhalter/jedi-vim'
