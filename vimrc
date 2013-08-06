@@ -18,7 +18,6 @@ Bundle 'davidhalter/jedi-vim'
 Bundle 'scrooloose/syntastic'
 " end vundle section 
 
-"Bundle 'davidhalter/jedi-vim'
 filetype plugin indent on
 
 set hidden
@@ -27,7 +26,6 @@ set backspace=indent,eol,start
 set autoindent
 set encoding=utf-8
 set history=1000
-set laststatus=2
 set showmode
 set showcmd
 set ruler
@@ -65,9 +63,6 @@ augroup END
 set guifont=DejaVu\ Sans\ Mono\ for\ Powerline\ 9
 set laststatus=2
 
-" nerdtree setup
-Bundle 'scrooloose/nerdtree'
-
 " Python-mode
 " Activate rope
 " Keys:
@@ -91,7 +86,7 @@ let g:pymode_doc_key = 'K'
 let g:pymode_lint = 1
 let g:pymode_lint_checker = "pyflakes,pep8"
 " Auto check on save
-let g:pymode_lint_write = 1
+let g:pymode_lint_write = 0
 
 " Support virtualenv
 let g:pymode_virtualenv = 1
@@ -112,9 +107,9 @@ let g:pymode_folding = 0
 " pretty things
 syntax enable
 " 
-" colorscheme molokai
+colorscheme molokai
 
 "solarized
-let g:solarized_termcolors=256
-set background=dark
-colorscheme solarized
+"let g:solarized_termcolors=256
+" set background=dark
+"colorscheme solarized
