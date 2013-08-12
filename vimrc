@@ -78,7 +78,8 @@ set showmatch
 set hlsearch
  
 " set statusline=%F%m%r%h%w%=(%{&ff}/%Y)\ (line\ %l\/%L,\ col\ %c)
- 
+
+
 set tabstop=4
 set shiftwidth=4
 set softtabstop=4
@@ -88,6 +89,7 @@ set expandtab
 autocmd FileType html setlocal shiftwidth=2 tabstop=2
 autocmd FileType htmldjango setlocal shiftwidth=2 tabstop=2
 autocmd FileType javascript setlocal shiftwidth=2 tabstop=2
+autocmd BufRead,BufNewFile *.src set filetype=xml  
 
 augroup vimrc_autocmds
     autocmd!
