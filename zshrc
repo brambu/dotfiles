@@ -11,6 +11,14 @@ if [ -d ~/.zsh ] ; then
 else
   mkdir -p ~/.zsh ; touch ~/.zsh/local
 fi
+if [ ! -d ~/.zsh/fsh ] ; then
+    mkdir -p ~/.zsh
+    (cd ~/.zsh; git clone https://github.com/zdharma/fast-syntax-highlighting fsh)
+fi
+if [ -d ~/.zsh/fsh ] ; then
+    source ~/.zsh/fsh/fast-syntax-highlighting.plugin.zsh
+    fast-theme -q free
+fi
 
 bindkey -v
 bindkey '\e[3~' delete-char
