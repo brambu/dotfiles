@@ -16,7 +16,7 @@ if [ ! -d ~/.zsh/fsh ] ; then
     (cd ~/.zsh; git clone https://github.com/zdharma/fast-syntax-highlighting fsh)
 fi
 if [ -d ~/.zsh/fsh ] ; then
-    source ~/.zsh/fsh/fast-syntax-highlighting.plugin.zsh
+    source ~/.zsh/fsh/F-Sy-H.plugin.zsh
     fast-theme -q free
 fi
 
